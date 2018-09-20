@@ -1,6 +1,55 @@
 @charset "utf-8";
 
 $main_color: #fffdf6;
+$sub_color: #faf6e9;
+$point_color: #494949;
 $title_font : "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", メイリオ, Verdana, "ＭＳ Ｐゴシック", sans-serif;
 $main_font: "georgia";
 
+body {
+	background-color: $main_color;
+}
+
+/*==========================================
+header =====================================
+============================================
+*/
+header {
+	height: 150px;
+	ul {
+		text-align: center;
+		line-height: 150px;
+		li {
+			display: inline;
+			a {
+				text-decoration: none;
+				color: #000;
+				font-size: 50px;
+				i {
+					margin-top: 5px;
+				}
+				.margin {
+					margin: 0 49px;
+				}
+				.nav {
+					height: 45px;
+					width: 45px;
+					border: 1px solid #000;
+					border-radius: 10px;
+					padding: 6px 4px;
+					font-size: 35px;
+				}
+				img {
+					vertical-align: middle;
+					margin: 0 49px 8px 49px;
+				}
+				#menu_bar {
+					height: 47px;
+					width: 47px;
+					margin-right: 0;
+					margin-left: 0;
+				}
+			}
+		}
+	}
+}
