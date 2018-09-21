@@ -9,6 +9,10 @@ $main_font: "georgia";
 body {
 	background-color: $main_color;
 }
+#wrapper {
+	width: 90%;
+	margin: 0 auto;
+}
 
 /*==========================================
 header =====================================
@@ -53,10 +57,7 @@ header {
 		}
 	}
 }
-#wrapper {
-	width: 90%;
-	margin: 0 auto;
-}
+
 /*==========================================
 main_slide =====================================
 ============================================
@@ -66,6 +67,61 @@ main_slide =====================================
 	border-top: 3px solid #ccc;
 	border-bottom: 3px solid #ccc;
 	padding: 45px 0 40px 0;
+}
+/*==========================================
+box =====================================
+============================================
+*/
+.box {
+	text-align: center;
+	border-bottom: 3px solid #ccc;
+	padding-bottom: 100px;
+	h2 {
+		margin-top: 100px;
+		margin-bottom: 115px;
+		font-size: 45px;
+	}
+	ul {
+		display: inline-flex;
+		width: 100%;
+		li {
+			margin-right: 45px;
+			text-align: left;
+			p {
+				margin-top: 145px;
+				font-size: 24px;
+				line-height: 36px;
+			}
+		}
+		li:first-child {
+			margin-left: 14.25%;
+		}
+	}
+	.btn {
+		display: inline-block;
+		align-items: center;
+		margin-top: 65px;
+		border: 1px solid $point_color;
+		padding: 15px 70px;
+		background-color: $point_color;
+		text-decoration: none;
+		color: #fff;
+		font-size: 20px;
+	}
+	.btn:hover {
+		background-color: #fff;
+		color: $point_color;
+	}	
+}
+/*==========================================
+footer =====================================
+============================================
+*/
+footer {
+	text-align: center;
+	padding: 20px 0;
+	color: #ccc;
+	font-size: 12px;
 }
 
 

@@ -2,6 +2,11 @@ body {
   background-color: #fffdf6;
 }
 
+#wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
 /*==========================================
 header =====================================
 ============================================
@@ -46,11 +51,6 @@ header ul li a #menu_bar {
   margin-left: 0;
 }
 
-#wrapper {
-  width: 90%;
-  margin: 0 auto;
-}
-
 /*==========================================
 main_slide =====================================
 ============================================
@@ -60,4 +60,61 @@ main_slide =====================================
   border-top: 3px solid #ccc;
   border-bottom: 3px solid #ccc;
   padding: 45px 0 40px 0;
+}
+
+/*==========================================
+box =====================================
+============================================
+*/
+.box {
+  text-align: center;
+  border-bottom: 3px solid #ccc;
+  padding-bottom: 100px;
+}
+.box h2 {
+  margin-top: 100px;
+  margin-bottom: 115px;
+  font-size: 45px;
+}
+.box ul {
+  display: inline-flex;
+  width: 100%;
+}
+.box ul li {
+  margin-right: 45px;
+  text-align: left;
+}
+.box ul li p {
+  margin-top: 145px;
+  font-size: 24px;
+  line-height: 36px;
+}
+.box ul li:first-child {
+  margin-left: 14.25%;
+}
+.box .btn {
+  display: inline-block;
+  align-items: center;
+  margin-top: 65px;
+  border: 1px solid #494949;
+  padding: 15px 70px;
+  background-color: #494949;
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+}
+.box .btn:hover {
+  background-color: #fff;
+  color: #494949;
+}
+
+/*==========================================
+footer =====================================
+============================================
+*/
+footer {
+  text-align: center;
+  padding: 20px 0;
+  color: #ccc;
+  font-size: 12px;
 }
