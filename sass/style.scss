@@ -64,15 +64,9 @@ header {
 				.margin {
 					margin: 0 49px;
 				}
-				img {
+				#logo {
 					vertical-align: middle;
 					margin: 0 49px 8px 49px;
-				}
-				#menu_bar {
-					height: 47px;
-					width: 47px;
-					margin-right: 0;
-					margin-left: 0;
 				}
 			}
 		}
@@ -144,10 +138,10 @@ main_slide =====================================
 ============================================
 */
 #main_slide {
-	height: 250px;
+	height: auto;
 	border-top: 3px solid #ccc;
 	border-bottom: 3px solid #ccc;
-	padding: 15px 0 10px 0;
+	padding: 2% 0;
 	img {
 		width: 60%;
 		height: auto;
@@ -212,6 +206,61 @@ footer {
 	font-size: 12px;
 }
 
+@media (max-width: 850px) {
+	header {
+		height: 80px;
+		#main_nav {
+			line-height: 80px;
+			li {
+				a {
+					font-size: 40px;
+					.margin {
+						margin: 0 19px;
+					}
+					#logo {
+						margin: 0 19px 8px 19px;
+						width: 100px;
+						height: 40px;
+					}
+				}
+
+			}
+		}
+	}
+	
+
+
+	#main_slide {
+		
+		img {
+			width: 100%;
+		}
+	}
+}
 
 
 
+@media (max-width: 650px) {
+	header {
+		height: 80px;
+		#main_nav {
+			li {
+				a {
+					font-size: 30px;
+					.margin {
+						//margin: 0 19px;
+						margin: 0 3px;
+					}
+					#logo {
+						//margin: 0 19px 8px 19px;
+						margin: 0 3px 8px 3px;
+						width: 100px;
+						//height: 40px;
+						height: 30px;
+					}
+				}
+
+			}
+		}
+	}
+}

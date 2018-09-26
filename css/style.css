@@ -66,15 +66,9 @@ header #main_nav li a i {
 header #main_nav li a .margin {
   margin: 0 49px;
 }
-header #main_nav li a img {
+header #main_nav li a #logo {
   vertical-align: middle;
   margin: 0 49px 8px 49px;
-}
-header #main_nav li a #menu_bar {
-  height: 47px;
-  width: 47px;
-  margin-right: 0;
-  margin-left: 0;
 }
 
 .is-fixed {
@@ -141,10 +135,10 @@ main_slide =====================================
 ============================================
 */
 #main_slide {
-  height: 250px;
+  height: auto;
   border-top: 3px solid #ccc;
   border-bottom: 3px solid #ccc;
-  padding: 15px 0 10px 0;
+  padding: 2% 0;
 }
 #main_slide img {
   width: 60%;
@@ -202,4 +196,44 @@ footer {
   padding: 20px 0;
   color: #ccc;
   font-size: 12px;
+}
+
+@media (max-width: 850px) {
+  header {
+    height: 80px;
+  }
+  header #main_nav {
+    line-height: 80px;
+  }
+  header #main_nav li a {
+    font-size: 40px;
+  }
+  header #main_nav li a .margin {
+    margin: 0 19px;
+  }
+  header #main_nav li a #logo {
+    margin: 0 19px 8px 19px;
+    width: 100px;
+    height: 40px;
+  }
+
+  #main_slide img {
+    width: 100%;
+  }
+}
+@media (max-width: 650px) {
+  header {
+    height: 80px;
+  }
+  header #main_nav li a {
+    font-size: 30px;
+  }
+  header #main_nav li a .margin {
+    margin: 0 3px;
+  }
+  header #main_nav li a #logo {
+    margin: 0 3px 8px 3px;
+    width: 100px;
+    height: 30px;
+  }
 }
