@@ -262,3 +262,64 @@ footer {
     margin-left: 0;
   }
 }
+/*==========================================
+ other page share =====================================
+============================================
+*/
+.box_wrapper {
+  text-align: center;
+  border-top: 3px solid #ccc;
+  border-bottom: 3px solid #ccc;
+  padding-bottom: 100px;
+  padding-top: 100px;
+}
+.box_wrapper h2 {
+  margin: 50px 0;
+  font-size: 45px;
+}
+
+/*==========================================
+ about page =====================================
+============================================
+*/
+#about ul {
+  display: flex;
+  justify-content: center;
+}
+#about ul li img {
+  height: auto;
+  width: 250px;
+  margin-right: 40px;
+}
+#about ul li #about_p {
+  text-align: left;
+  font-size: 20px;
+  line-height: 25px;
+  margin-top: 120px;
+}
+#about ul li #about_p p {
+  margin-bottom: 10px;
+}
+#about ul li:last-child {
+  width: 400px;
+}
+
+@media (max-width: 750px) {
+  #about ul {
+    flex-direction: column;
+  }
+  #about ul li {
+    text-align: center;
+  }
+  #about ul li img {
+    margin-right: 0;
+  }
+  #about ul li #about_p {
+    margin-top: 30px;
+    font-size: 18px;
+    padding-left: 15px;
+  }
+  #about ul li:last-child {
+    width: 100%;
+  }
+}
