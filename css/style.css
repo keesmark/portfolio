@@ -155,7 +155,7 @@ box =====================================
   border-bottom: 3px solid #ccc;
   padding-bottom: 100px;
 }
-.box h2 {
+.box h2, .box h3 {
   margin: 90px 0;
   font-size: 45px;
 }
@@ -246,7 +246,7 @@ footer {
     height: 30px;
   }
 
-  .box h2 {
+  .box h2, .box h3 {
     margin: 50px 0;
   }
   .box ul {
@@ -320,6 +320,46 @@ footer {
     padding-left: 15px;
   }
   #about ul li:last-child {
+    width: 100%;
+  }
+}
+/*==========================================
+ work page =====================================
+============================================
+*/
+/*==========================================
+ skill page =====================================
+============================================
+*/
+#skill .box {
+  border-bottom: none;
+}
+#skill .box .skill_icon {
+  font-size: 150px;
+  margin-right: 100px;
+}
+#skill .box ul li p {
+  margin-top: 45px;
+  width: 400px;
+}
+#skill .orange {
+  color: orange;
+}
+#skill .red {
+  color: red;
+}
+#skill .blue {
+  color: blue;
+}
+#skill .green {
+  color: green;
+}
+
+@media (max-width: 750px) {
+  #skill .box .skill_icon {
+    margin-right: 0;
+  }
+  #skill .box ul li p {
     width: 100%;
   }
 }
