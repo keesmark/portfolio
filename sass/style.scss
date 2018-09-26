@@ -307,7 +307,7 @@ footer {
  about page =====================================
 ============================================
 */
-#about {
+.about {
 	ul {
 		display: flex;
 		justify-content: center;
@@ -317,7 +317,7 @@ footer {
 				width: 250px;
 				margin-right: 40px;
 			}
-			#about_p {
+			.about_p {
 				text-align: left;
 				font-size: 20px;
 				line-height: 25px;
@@ -334,7 +334,7 @@ footer {
 }
 
 @media (max-width: 750px) {
-	#about {
+	.about {
 		ul {
 			flex-direction: column;
 			li {
@@ -342,7 +342,7 @@ footer {
 				img {
 					margin-right: 0;
 				}
-				#about_p {
+				.about_p {
 					margin-top: 30px;
 					font-size: 18px;
 					padding-left: 15px;
@@ -365,6 +365,15 @@ footer {
 ============================================
 */
 #skill {
+	#skill_p {
+		margin: 0 auto;
+		font-size: 22px;
+		width: 70%;
+		p {
+			margin-bottom: 20px;
+			line-height: 30px;
+		}
+	}
 	.box {
 		border-bottom: none;
 		.skill_icon {
@@ -395,6 +404,9 @@ footer {
 }
 @media (max-width: 750px) {
 	#skill {
+		#skill_p {
+			width: 100%;
+		}
 		.box {
 			.skill_icon {
 				margin-right: 0;
@@ -407,6 +419,74 @@ footer {
 				}
 			}
 		}
+		.zero {
+			padding-bottom: 0;
+		}
 	}
+}
+/*==========================================
+ dog page =====================================
+============================================
+*/
+#dog {
+	.dog_p {
+		margin-top:360px;
+	} 
+}
+#history {
+	ul {
+		margin-bottom: 50px;
+		height: 400px;
+		line-height: 400px;
+		vertical-align: bottom;
+
+	}
+	.koro_img {
+		width: 250px;
+	}
+	.dog_p {
+		width: 400px;
+		margin-top: 280px;
+	}
+	.history_right {
+		.dog_p {
+			margin-right: 20px;
+			margin-left: 0;
+		}
+	}
+	.history_left {
+		.dog_p {
+			margin-left: 20px;
+		}
+	}
+}
+
+@media (max-width: 750px) {
+	#dog, #history {
+		ul {
+			flex-direction: column;
+			li {
+				text-align: center;
+				img {
+					margin-right: 0;
+				}
+			}
+		}
+		.history_right {
+			flex-direction: column-reverse;
+		}
+		.dog_p {
+			margin-top: 50px;
+			text-align: center;
+			width: 100%;
+		}
+	}
+	#history {
+		.dog_p {
+			margin: 160px 0 0 0;
+		}
+		
+	}
+
 }
 

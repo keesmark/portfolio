@@ -282,44 +282,44 @@ footer {
  about page =====================================
 ============================================
 */
-#about ul {
+.about ul {
   display: flex;
   justify-content: center;
 }
-#about ul li img {
+.about ul li img {
   height: auto;
   width: 250px;
   margin-right: 40px;
 }
-#about ul li #about_p {
+.about ul li .about_p {
   text-align: left;
   font-size: 20px;
   line-height: 25px;
   margin-top: 120px;
 }
-#about ul li #about_p p {
+.about ul li .about_p p {
   margin-bottom: 10px;
 }
-#about ul li:last-child {
+.about ul li:last-child {
   width: 400px;
 }
 
 @media (max-width: 750px) {
-  #about ul {
+  .about ul {
     flex-direction: column;
   }
-  #about ul li {
+  .about ul li {
     text-align: center;
   }
-  #about ul li img {
+  .about ul li img {
     margin-right: 0;
   }
-  #about ul li #about_p {
+  .about ul li .about_p {
     margin-top: 30px;
     font-size: 18px;
     padding-left: 15px;
   }
-  #about ul li:last-child {
+  .about ul li:last-child {
     width: 100%;
   }
 }
@@ -331,6 +331,15 @@ footer {
  skill page =====================================
 ============================================
 */
+#skill #skill_p {
+  margin: 0 auto;
+  font-size: 22px;
+  width: 70%;
+}
+#skill #skill_p p {
+  margin-bottom: 20px;
+  line-height: 30px;
+}
 #skill .box {
   border-bottom: none;
 }
@@ -356,10 +365,68 @@ footer {
 }
 
 @media (max-width: 750px) {
+  #skill #skill_p {
+    width: 100%;
+  }
   #skill .box .skill_icon {
     margin-right: 0;
   }
   #skill .box ul li p {
     width: 100%;
+  }
+  #skill .zero {
+    padding-bottom: 0;
+  }
+}
+/*==========================================
+ dog page =====================================
+============================================
+*/
+#dog .dog_p {
+  margin-top: 360px;
+}
+
+#history ul {
+  margin-bottom: 50px;
+  height: 400px;
+  line-height: 400px;
+  vertical-align: bottom;
+}
+#history .koro_img {
+  width: 250px;
+}
+#history .dog_p {
+  width: 400px;
+  margin-top: 280px;
+}
+#history .history_right .dog_p {
+  margin-right: 20px;
+  margin-left: 0;
+}
+#history .history_left .dog_p {
+  margin-left: 20px;
+}
+
+@media (max-width: 750px) {
+  #dog ul, #history ul {
+    flex-direction: column;
+  }
+  #dog ul li, #history ul li {
+    text-align: center;
+  }
+  #dog ul li img, #history ul li img {
+    margin-right: 0;
+  }
+  #dog .history_right, #history .history_right {
+    flex-direction: column-reverse;
+  }
+  #dog .dog_p, #history .dog_p {
+    margin-top: 50px;
+    text-align: center;
+    width: 100%;
+  }
+
+  #history .dog_p {
+    margin: 160px 0 0 0;
   }
 }
