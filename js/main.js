@@ -19,6 +19,7 @@ $(window).scroll(function () {
     }
 });
 
+
 $(function() {
     $("#nav_btn").click(function () {
 	  	$("#nav_container").fadeIn("slow");
@@ -45,4 +46,34 @@ $(document).ready(function() {
         }, 600);
         return false;
     });
+});
+
+
+$(function(){
+  // スクロールごとに処理をさせる
+  $(window).on('scroll',function(){
+    // スクロール毎の処理
+
+    // スクロール量を取得
+    var scroll_top = $(window).scrollTop();
+    var scroll_up = $('#history').scrollTop();
+    
+
+    // eachを利用して「effect」クラスの要素それぞれに処理を行なう
+    $('#history').each(function(){
+      // 要素のドキュメント上の位置を取得
+      var offset_top = $(this).offset().top,
+          top_margin = 50 ; // 画面上端からのマージン
+      // スクロール量と要素の位置からマージンを引いた値を比較
+      if( scroll_top > offset_top - top_margin ){
+        // スクロール量が所定の位置を越えた時にfadeinクラスを付与
+          $('.current_nav').addClass('on');       
+      }else if ( scroll_top < offset_top ){
+        // スクロール量が所定の位置を越えていない場合はfadeinクラスを外す
+          $('.current_nav').removeClass('on');       
+      } else {
+      	$('.current_nav').removeClass('on');
+      }
+    });
+  });
 });

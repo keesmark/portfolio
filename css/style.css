@@ -334,7 +334,7 @@ footer {
 #skill #skill_p {
   margin: 0 auto;
   font-size: 22px;
-  width: 70%;
+  width: 50%;
 }
 #skill #skill_p p {
   margin-bottom: 20px;
@@ -386,6 +386,9 @@ footer {
   margin-top: 360px;
 }
 
+#history {
+  position: relative;
+}
 #history ul {
   margin-bottom: 50px;
   height: 400px;
@@ -405,6 +408,18 @@ footer {
 }
 #history .history_left .dog_p {
   margin-left: 20px;
+}
+#history .current_nav {
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: 0;
+}
+#history .on {
+  color: red;
+  position: fixed;
+  top: 0;
+  left: 50px;
 }
 
 @media (max-width: 750px) {
@@ -429,4 +444,32 @@ footer {
   #history .dog_p {
     margin: 160px 0 0 0;
   }
+  #history .current_nav {
+    display: none;
+  }
+}
+/*==========================================
+ contact_page =====================================
+============================================
+*/
+#contact {
+  text-align: center;
+}
+#contact #contact_p {
+  margin: 0 auto;
+  width: 80%;
+  font-size: 24px;
+}
+
+@media (max-width: 750px) {
+  #contact #contact_p {
+    width: 100%;
+  }
+}
+.current_nav ul {
+  display: flex;
+  flex-direction: column;
+}
+.current_nav ul li {
+  font-size: 30px;
 }
