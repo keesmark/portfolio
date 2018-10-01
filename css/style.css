@@ -447,6 +447,9 @@ footer {
     width: 100%;
   }
 
+  #history .history_left .dog_p {
+    margin-left: 0;
+  }
   #history .dog_p {
     margin: 160px 0 0 0;
   }
