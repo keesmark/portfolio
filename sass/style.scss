@@ -460,19 +460,36 @@ footer {
 			margin-left: 20px;
 		}
 	}
+	
 	.current_nav {
 		position: absolute;
 		left: 0;
 		top: 0;
 		margin: 0;
+		ul {
+			li {
+				a {
+					color: #000;
+					text-decoration: none;
+				}
+			}
+		}
 		
 	}
 	.on {
-		color: red;
 	  position: fixed;
 	  top: 0;
-	  left: 50px;
+	  left: calc(5%);
 	  
+	}
+	.current {
+		a {
+			i {
+				color: red;
+			}
+			
+		}
+		
 	}
 
 }

@@ -415,11 +415,17 @@ footer {
   top: 0;
   margin: 0;
 }
+#history .current_nav ul li a {
+  color: #000;
+  text-decoration: none;
+}
 #history .on {
-  color: red;
   position: fixed;
   top: 0;
-  left: 50px;
+  left: calc(5%);
+}
+#history .current a i {
+  color: red;
 }
 
 @media (max-width: 750px) {
