@@ -38,6 +38,17 @@ body {
 .top:hover {
     opacity: 0.9;
 }
+
+.fadein {
+    opacity : 0;
+    transform : translate(0, 50px);
+    transition : all 500ms;
+}
+.fadein.scrollin {
+    opacity : 1;
+    transform : translate(0, 0);
+}
+
 /*==========================================
 header =====================================
 ============================================
