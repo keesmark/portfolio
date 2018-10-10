@@ -37,7 +37,7 @@ function updateButton() {
     }
 }
 
-$(document).ready(function() {
+$(function() {
     updateButton();
     $(window).scroll(updateButton);
     $(".top").click(function() {

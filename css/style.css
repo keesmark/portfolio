@@ -79,6 +79,8 @@ header #main_nav li a .margin {
   margin: 0 49px;
 }
 header #main_nav li a #logo {
+  width: 250px;
+  height: auto;
   vertical-align: middle;
   margin: 0 49px 8px 49px;
 }
@@ -338,6 +340,25 @@ footer {
  work page =====================================
 ============================================
 */
+#work_box #work_li {
+  display: flex;
+  margin: 0 auto;
+  width: 600px;
+}
+#work_box #work_li li {
+  display: inline-block;
+  border: 1px solid #f4f4f4;
+  transition: 300ms;
+}
+#work_box #work_li li:hover {
+  width: 100%;
+  z-index: 10;
+  background-color: red;
+}
+#work_box #work_li li:hover img {
+  align-item: streach;
+}
+
 /*==========================================
  skill page =====================================
 ============================================
@@ -479,6 +500,8 @@ footer {
   margin: 0 auto;
   width: 80%;
   font-size: 24px;
+  line-height: 34px;
+  width: 50%;
 }
 
 @media (max-width: 750px) {
